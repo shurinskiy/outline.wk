@@ -37,7 +37,7 @@
 				<span>Tattoo</span>
 			</h1>
 			<div class="hero__text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br> *(бесплатная консультация!) </div>
-			<button class="hero__button" type="button">Записаться</button>
+			<button class="hero__button" type="button" data-modal="feedback">Записаться</button>
 			<div class="hero__phone">
 				<span>Вы можете свяваться с нами по телефону</span>
 				<a href="tel:+79895359875">+7 (989) 535-98-75</a>
@@ -58,6 +58,51 @@
 <footer class="footer"> 
   
 </footer> 
+
+<div class="modal__hidden">
+	<div id="feedback">
+		<form class="form" action="./">
+			<h1 class="form__title">Запись на консультацию</h1>
+			<div class="form__layout">
+				<label class="form__field form__field_text">
+					<input type="text" placeholder="Ваше имя">
+				</label>
+				<label class="form__field form__field_tel">
+					<input type="tel" placeholder="Ваш номер телефона">
+				</label>
+				<label class="form__field form__field_text">
+					<input type="text" placeholder="Email">
+				</label>
+				<label class="form__field form__field_textarea">
+					<textarea class="form__textarea" placeholder="Напишите сообщение"></textarea>
+				</label>
+				<div class="form__upload">
+					<span>Прикрепите файлом эскиз желаемой татуировки</span>
+					<label class="form__field form__field_file">
+						<input type="file">
+						<span>Загрузить</span>
+					</label>
+				</div>
+				<div class="form__agree">
+					<label class="form__field form__field_checkbox">
+						<input type="checkbox">
+						<span>Я принимаю Пользоватьское соглашение</span>
+					</label>
+				</div>
+			</div>
+			<div class="form__buttons">
+				<button class="form__button" type="button" data-modal="success">Отправить</button>
+			</div>
+		</form>
+	</div>
+	<div id="success">
+		<div class="form">
+			<h1 class="form__title">Заявка отправлена</h1>
+			<div class="form__text">Мы свяжемся с вами в ближайщее время в рабочее время с 9:00-23:00</div>
+		</div>
+	</div>
+</div>
+
 <script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
 <script src="common.js"></script> 
 </body> 
